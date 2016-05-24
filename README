@@ -1,0 +1,9 @@
+This is a basic C library for controling GPIO on Orange PI
+
+Tested on OPi One
+You need the gpio-sunxi module loaded for it to work, otherwise you will get segfaults
+You load it with:
+
+# modprobe gpio-sunxi
+
+Its only for GPIO for now, support for I2C and UART is comming.
