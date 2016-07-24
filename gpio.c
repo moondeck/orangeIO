@@ -6,5 +6,11 @@ int OutPin(char *state,char *pin){
 	fp = fopen(pin,"w+");
 	fputs(state,fp);
 	fclose(fp);
-	return 0;
+	fp = 0;
+	fp = fopen(pin,"w+");
+	if(fgetc(fp) == "1"){
+		return 0;
+	} else{
+		return -1;
+	}
 }
